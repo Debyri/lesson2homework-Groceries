@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <title>Groceries list</title>
+</head>
+
+<style>
+    /* Played with CSS a bit */
+    body {
+        background-color: whitesmoke;
+    }
+
+    .button {
+        width: 150px;
+        padding: 20px 30px;
+        margin: 10px 20px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        transition: 1s;
+    }
+
+    .button:hover {
+        background-position: right center;
+        box-shadow: 3px 3px 30px tomato;
+        border: 2px solid tomato;
+        background-image: radial-gradient(tomato, whitesmoke)
+    }
+
+    #submit {
+        box-shadow: 2px 1px 2px black;
+
+    }
+
+    #submit:hover {
+        box-shadow: 3px 2px 4px black;
+    }
+</style>
+
+<body>
+    <header>
+        <h1> What to buy</h1>
+    </header>
+    <main>
+        <form>
+            <ol>
+                <li class="button">
+                    <label for="product1">Bread</label>
+                    <input type="checkbox" id="product1" name="product1" value="Bread">
+
+                </li>
+                <li class="button">
+                    <label for="product2">Milk</label>
+                    <input type="checkbox" id="product2" name="product2" value="milk">
+
+                </li>
+                <li class="button">
+                    <label for="product3">Cereal</label>
+                    <input type="checkbox" id="product3" name="product3" value="cereal">
+                </li>
+                <li class="button">
+                    <label for="product4">AR-15</label>
+                    <input type="checkbox" id="product4" name="product4" value="ar-15">
+                </li>
+                <li class="button">
+                    <label for="product5">Ammo</label>
+                    <input type="checkbox" id="product5" name="product5" value="ammo">
+                </li>
+            </ol>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+
+</html>
